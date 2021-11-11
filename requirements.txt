@@ -6,3 +6,10 @@ click
 Sphinx
 python-dotenv>=0.5.1
 
+pandas
+numpy
+scipy
+matplotlib
+seaborn
+geopandas
+scikit-learn
