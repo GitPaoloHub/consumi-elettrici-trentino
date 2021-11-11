@@ -1,7 +1,12 @@
 consumi elettrici Trentino
 ==============================
 
-breve progetto di data science sui dati relativi ai consumi elettrici del territorio Trentino nei mesi di novembre e dicembre, con l'obbiettivo di creare un modello capace di prevedere in maniera "attendibile" le zone con maggiori consumi 
+Breve progetto di data science sui dati relativi ai consumi elettrici del territorio Trentino nei mesi di novembre e dicembre.
+Il progetto è principalmente strutturato sulla base di 3 jupiter notebook appunto nella cartella "notebooks" in cui vengono affrontate separatamente le tre fasi principali di un progetto di DS:
+- in "preprocessing" vengono caricati i dati raw e processati in dataframe comodi per le analisi successive, princpalmente combinando tra loro i dataframe grezzi, i dataframe così ottenuti sono caricati quindi nella cartella "data/processed".   Questo notebook in genere impiega una decina di minuti per runnare ma non è necessario farlo in quanto i risultati sono già stati caricati.
+- in "EDA" viene effettuata l'exploratory data analysis dei dati processati, vengono mostrate graficamente le correlazioni principali presenti nei dati.
+- in "MachineLearning" infine si costruiscono dei modelli con due principali tasks. per la prima è richiesto di poter prevedere con una regressione quali saranno i consumi elettrici giornalieri di tutta la provincia e del centro urbano di Rovereto, avendo a disposizione i dati (consumi, meteo, temperature, ecc..) relativi ai tre giorni precedenti dal giorno da prevedere,  per la seconda invece è richiesto di classificare la zona del comune di Trento con i maggiori consumi, sempre conoscendo i dati relativi ai tre giorni precedenti.   I modelli ottenuti sono salvati nella cartella "models".
+
 
 Project Organization
 ------------
